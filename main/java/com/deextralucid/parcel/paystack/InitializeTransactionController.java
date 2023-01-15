@@ -79,9 +79,7 @@ public class InitializeTransactionController {
                 product.setProd_qty(stockBalance);
                 productRepo.save(product);
                 orderItemRepo.save(orderItems[i]);
-
             }
-
             return true;
         } else {
             System.out.println(paymentStatus);
