@@ -25,9 +25,13 @@ dependencies {
 	
 	// Database
 	runtimeOnly 'org.postgresql:postgresql'
+	testImplementation 'com.h2database:h2'
 	
 	// Jackson for JSON processing
 	implementation 'com.fasterxml.jackson.core:jackson-databind'
+	
+	// DotEnv for environment variable management
+	implementation 'io.github.cdimascio:dotenv-java:3.0.0'
 	
 	// Lombok for reducing boilerplate (optional but recommended)
 	compileOnly 'org.projectlombok:lombok'
